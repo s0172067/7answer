@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Адаптивная галерея изображений</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body style="width:100%; background-color:lightcyan;">
+    <div class="wrap">
+        <h1>Галерея изображений</h1>
+        <div class="gallery" data-setting="setup1">
+            <div class="slider">
+                <div class="stage">
+                    <div>
+                        <a href="images/img_01.jpg" title="ссылка-изображение">
+                            <img id="linkImg" src="images/img_01.jpg" alt="Цветок"  />
+                        </a>
+                        
+                    </div>
+                    <div>
+                        <a href="images/img_02.jpg" title="ссылка-изображение">
+                            <img id="linkImg" src="images/img_02.jpg" alt="Цветок" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="images/img_03.jpg" title="ссылка-изображение">
+                            <img id="linkImg" src="images/img_03.jpg" alt="Цветок" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="images/img_04.jpg" title="ссылка-изображение">
+                            <img id="linkImg" src="images/img_04.jpg" alt="Цветок" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="images/img_05.jpg" title="ссылка-изображение">
+                            <img id="linkImg" src="images/img_05.jpg" alt="Цветок" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="images/img_06.jpg" title="ссылка-изображение">
+                            <img id="linkImg" src="images/img_06.jpg" alt="Цветок" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="images/img_07.jpg" title="ссылка-изображение">
+                            <img id="linkImg" src="images/img_07.jpg" alt="Цветок"  />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="images/img_08.jpg" title="ссылка-изображение">
+                            <img id="linkImg" src="images/img_08.jpg" alt="Цветок" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="images/img_09.jpg" title="ссылка-изображение">
+                            <img id="linkImg" src="images/img_09.jpg" alt="Цветок" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="images/img_010.jpg" title="ссылка-изображение">
+                            <img id="linkImg" src="images/img_010.jpg" alt="Цветок" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="images/img_011.jpg" title="ссылка-изображение">
+                            <img id="linkImg" src="images/img_011.jpg" alt="Цветок" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="images/img_012.jpg" title="ссылка-изображение">
+                            <img id="linkImg" src="images/img_012.jpg" alt="Цветок" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="images/img_013.jpg" title="ссылка-изображение">
+                            <img id="linkImg" src="images/img_013.jpg" alt="Цветок" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="images/img_014.jpg" title="ссылка-изображение">
+                            <img id="linkImg" src="images/img_014.jpg" alt="Цветок" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="images/img_015.jpg" title="ссылка-изображение">
+                            <img id="linkImg" src="images/img_015.jpg" alt="Цветок" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="images/img_016.jpg" title="ссылка-изображение">
+                            <img id="linkImg" src="images/img_016.jpg" alt="Цветок" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="control">
+                <div class="nav-ctrl" data-hidden="true">
+                    <span class="prev" data-shift="prev">Назад</span>
+                    <span class="next" data-shift="next">Вперед</span>
+                </div>
+                <ul class="dots-ctrl" data-hidden="true"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        const setting = {
+            setup1: {
+          
+                dots: true,
+
+                keyControl: true,
+
+                adaptive: {
+   
+                    320: {
+                     
+                        visibleItems: 1,
+                        
+                        margin: 5,
+                     
+                        dots: false
+                    },
+                    
+                    560: {
+                        
+                        visibleItems: 2,
+                        
+                        margin: 5,
+                        
+                        dots: false
+                    },
+                    
+                    768: {
+                        
+                        visibleItems: 3,
+                    },
+                    
+                    1024: {
+                       
+                        visibleItems: 4
+                    }
+                }
+            },
+            setup2: {
+               
+                visibleItems: 4,
+               
+                dots: true,
+                
+                keyControl: true,
+               
+                responsive: false
+            }
+        };
+    </script>
+    <script src="Script1.js"></script>
+</body>
+</html>
